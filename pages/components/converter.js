@@ -7,7 +7,7 @@ import Heading from "./heading"
 const Converter = () => {
   const [info, setInfo] = useState([]);
   const [input, setInput] = useState(0);
-  const [from, setFrom] = useState("btcb");
+  const [from, setFrom] = useState("gbp");
   const [to, setTo] = useState("usd");
   const [options, setOptions] = useState([]);
   const [output, setOutput] = useState(0);
@@ -61,7 +61,7 @@ const Converter = () => {
                 <Select className="my-2 box"
                   options={options}
                   onChange={(e) => { setFrom(e.value) }}
-                  value={from} placeholder="btcb" />
+                  value={from} placeholder="gbp" />
               </div>
 
               <div className="text-blue-600 my-1 lg:my-8">
