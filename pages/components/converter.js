@@ -24,6 +24,7 @@ const Converter = () => {
   useEffect(() => {
     setOptions(Object.keys(info));
     convert();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [info])
 
 
